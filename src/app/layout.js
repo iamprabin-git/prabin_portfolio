@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'My Portfolio',
+  title: 'Prabin Dangol',
   description: 'Web Developer & Graphic Designer Portfolio',
 };
 
