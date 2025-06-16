@@ -36,8 +36,8 @@ export default function HeroSection() {
           className="flex-1 text-center md:text-left"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Hi, I'm Prabin Dangol
-          </h1>
+           {`Hi, I'm Prabin Dangol
+          `} </h1>
 
           <TypeAnimation
             sequence={[
