@@ -8,7 +8,7 @@ export default function Projects() {
             <div key={i} className="bg-white dark:bg-gray-800 p-4 rounded shadow">
               <h3 className="text-xl font-semibold mb-2">Project {i}</h3>
               <p className="text-sm mb-2">Description of project {i}</p>
-              <a href="#" className="text-amber-500">View More →</a>
+              <a href="https://github.com/iamprabin-git" className="text-amber-500">View More →</a>
             </div>
           ))}
         </div>
