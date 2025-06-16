@@ -1,12 +1,68 @@
+'use client';
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
+import heroImage from "@/assets/me.png"; // change if needed
 import Link from "next/link";
 
-export default function Hero() {
+export default function HeroSection() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center px-4">
-      <h1 className="text-4xl md:text-6xl font-bold">Hi, I'm Prabin Dangol</h1>
-      <p className="mt-4 text-lg">Web Developer & Graphic Designer</p>
-      <div className="mt-6">
-        <Link href="https://github.com/iamprabin-git" className="px-6 py-2 bg-amber-500 text-white rounded-full hover:bg-amber-600">View My Work</Link>
+    <section className="py-20 px-6 md:px-12 bg-white dark:bg-gray-900">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+        
+        {/* Left - Animated Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="flex-1 text-center md:text-left"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            Hi, I'm Prabin
+          </h1>
+
+          <TypeAnimation
+            sequence={[
+              "Web Developer", 2000,
+              "Graphic Designer", 2000,
+              "UI/UX Enthusiast", 2000,
+              "Brand Identity Creator", 2000
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            className="text-2xl md:text-3xl font-semibold text-amber-500"
+          />
+
+          <p className="mt-6 text-gray-600 dark:text-gray-300">
+            I create beautiful and functional web applications with intuitive designs.
+          </p>
+
+          <Link
+            href="#contact"
+            className="inline-block mt-6 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-medium rounded-lg transition"
+          >
+            Let’s Work Together
+          </Link>
+        </motion.div>
+
+        {/* Right - Image */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="flex-1"
+        >
+          <Image
+            src={heroImage}
+            alt="Prabin Dangol"
+            width={1000}
+            height={1000}
+            className="w-full h-100 object-cover "
+            priority
+          />
+        </motion.div>
       </div>
     </section>
   );
