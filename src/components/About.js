@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import profilePic from '@/assets/me.png'; // Replace with your actual image
+import { motion } from "framer-motion";
+import Image from "next/image";
+import profilePic from "@/assets/me.png"; // Replace with your actual image
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -15,16 +16,32 @@ export default function AboutSection() {
           transition={{ duration: 1 }}
           className="flex-1"
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white">About Me</h2>
+          <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white">
+            About Me
+          </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-            Hello! I'm a <span className="text-amber-500 font-semibold">Web Developer</span> and{" "}
-            <span className="text-amber-500 font-semibold">Graphic Designer</span> with a passion for
-            building creative, user-friendly digital experiences.
+            Hello! I'm a{" "}
+            <span className="text-amber-500 font-semibold">Web Developer</span>{" "}
+            and{" "}
+            <span className="text-amber-500 font-semibold">
+              Graphic Designer
+            </span>{" "}
+            with a passion for building creative, user-friendly digital
+            experiences.
           </p>
           <p className="text-gray-600 dark:text-gray-400">
-            With a strong foundation in front-end development and visual storytelling,
-            I bridge the gap between functionality and aesthetics. I love transforming ideas into intuitive, beautiful designs.
+            With a strong foundation in front-end development and visual
+            storytelling, I bridge the gap between functionality and aesthetics.
+            I love transforming ideas into intuitive, beautiful designs.
           </p>
+          <div className="mt-8 text-blue-600">
+            <Link
+              href="https://github.com/iamprabin-git"
+              className="flex justify-center mt-8"
+            >
+              My Github Link
+            </Link>
+          </div>
         </motion.div>
 
         {/* Image Area */}
