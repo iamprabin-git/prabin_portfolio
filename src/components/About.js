@@ -13,8 +13,8 @@ export default function AboutSection() {
   ];
 
   const timeline = [
-    { year: "2023", role: "Frontend Developer", company: "Freelance", desc: "Built websites for local clients using Next.js & Tailwind." },
-    { year: "2022", role: "Graphic Designer", company: "Creative Studio", desc: "Designed brand identities and print-ready marketing materials." },
+    { year: "2024", role: "Frontend Developer", company: "Freelance", desc: "Built websites for local clients using Next.js & Tailwind." },
+    { year: "2023", role: "Graphic Designer", company: "Creative Studio", desc: "Designed brand identities and print-ready marketing materials." },
   ];
 
   return (

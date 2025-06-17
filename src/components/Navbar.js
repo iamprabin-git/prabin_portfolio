@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav className="flex justify-between items-center px-6 py-4 shadow-md sticky top-0 z-50 bg-white dark:bg-black">
-      <h1 className="text-xl font-bold">MyPortfolio</h1>
+      <h1 className="text-xl font-bold">Prabin Dangol</h1>
       <ul className="flex gap-6">
         {navlinks.map(link => (
           <li key={link.name}>
