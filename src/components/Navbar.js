@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import navlinks from '../constants/navlinks';
 import { FiMenu} from 'react-icons/fi';
-import { IoMdClose } from "react-icons/io";
-
+import { FiX } from "react-icons/fi";
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +50,7 @@ function Navbar() {
         <div className="p-4 flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
           <h2 className="text-xl font-semibold text-gray-800 dark:text-white">Menu</h2>
           <button onClick={() => setMenuOpen(false)} className="text-2xl text-gray-600 dark:text-gray-300">
-           <IoMdClose />
+          <FiX />
           </button>
         </div>
         <nav className="flex flex-col gap-4 p-6 text-gray-800 dark:text-white">
