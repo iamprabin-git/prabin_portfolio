@@ -1,10 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import logo from "@/assets/prabin-logo.png";
 
 export default function Footer() {
   return (
@@ -14,11 +16,21 @@ export default function Footer() {
       transition={{ duration: 0.8 }}
       className=" bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-white py-12 px-6"
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
 
         {/* Logo and Info */}
         <div>
-          <h3 className="text-2xl font-bold text-amber-500">Prabin Dangol</h3>
+          <div className="grid grid-cols-2">
+         
+          <Image
+                    src={logo}
+                    alt="Prabin Dangol"
+                    width={500}
+                    height={500}
+                    className="w-15 h-15 object-cover"
+                  />
+                   <h1 className="text-2xl font-semibold mb-3">Prabin Dangol</h1>
+                  </div>
           <p className="text-gray-900 dark:text-white mt-3">
             Creative Web Developer & Graphic Designer building clean and modern user experiences.
           </p>

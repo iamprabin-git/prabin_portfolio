@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Prabin Dangol',
-  description: 'Web Developer & Graphic Designer Portfolio',
+  description: 'Web Developer & Graphic Designer in lalitpur, Nepal',
 };
 
 export default function RootLayout({ children }) {
