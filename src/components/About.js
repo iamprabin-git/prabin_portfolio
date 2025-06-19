@@ -13,6 +13,7 @@ export default function AboutSection() {
   ];
 
   const timeline = [
+    { year: "2025", role: "Backend Developer", company: "Freelance", desc: "Built websites for local clients using Node.js & Express." },
     { year: "2024", role: "Frontend Developer", company: "Freelance", desc: "Built websites for local clients using Next.js & Tailwind." },
     { year: "2023", role: "Graphic Designer", company: "Creative Studio", desc: "Designed brand identities and print-ready marketing materials." },
   ];
